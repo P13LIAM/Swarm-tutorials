@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  web:
+    image: api_counts:1.0
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 100M
+    ports:
+      - "80:80"
