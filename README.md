@@ -3,7 +3,7 @@
 ### [1] Build image
 
 ```
-docker build -t api_counts:1.0 .
+docker build -t api_counts:2.0 .
 ```
 
 ### [2] Swarm init

@@ -2,7 +2,8 @@ version: "3.9"
 
 services:
   web:
-    image: api_counts:1.0
+    image: api_counts:2.0
+    build: .
     deploy:
       replicas: 5
       resources:
@@ -11,3 +12,5 @@ services:
           memory: 100M
     ports:
       - "80:80"
+  redis:
+    image: redis:alpine
